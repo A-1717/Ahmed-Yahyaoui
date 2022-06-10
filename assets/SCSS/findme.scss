@@ -1,0 +1,121 @@
+@import 'abstracts/style';
+
+body {
+    .primary-main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .find-me {
+            display: none;
+            width: 80%;
+            height: 80%;
+            background-color: rgba($color: #ffffff, $alpha: .1);
+            animation: findme 1s ease 1;
+            @keyframes findme {
+                0% {filter: blur(500px);}
+                100% {filter: blur(0px);}
+            }
+            
+            .links {
+                width: 20%;
+                height: 100%;
+                a {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 100px;
+                    height: 14.2%;
+                    background-color: rgba($color: #ffffff, $alpha: .2);
+                }
+                a:hover img {
+                    animation: socialIcon 1s ease 1;
+                    @keyframes socialIcon {
+                        0% {transform: translateY(-10px);}
+                        10% {transform: translateY(-10px) rotateZ(-50deg);}
+                        20% {transform: translateY(-10px) rotateZ(50deg);}
+                        30% {transform: translateY(-10px) rotateZ(-50deg);}
+                        40% {transform: translateY(-10px) rotateZ(50deg);}
+                        50% {transform: translateY(0px) rotateZ(0deg);}
+                        100% {transform: translateY(0px)rotateZ(0deg);}
+                    }
+                }
+            }
+            .ad {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 60%;
+
+                p {
+                    text-align: center;
+                    font-size: 50px;
+                    color: $light-blue;
+                }
+            }
+        }
+    }
+
+    // 750 px media query 
+@media only screen and (max-width: 750px) {
+    .primary-main {
+        .find-me {
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            
+            .links {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                height: 100px;
+                order: 2;
+                a {
+                    width: 14.2%;
+                    height: 100%;
+                    background-color: rgba($color: #ffffff, $alpha: .2);
+                }
+            }
+            .ad {
+                width: 100%;
+                p {
+                    font-size: 30px;
+                }
+            }
+        }
+    }
+}
+    // 500 px media query 
+@media only screen and (max-width: 500px) {
+    .primary-main {
+        .find-me {
+            
+            .links {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+                width: 100%;
+                height: 50%;
+                order: 2;
+                background-color: rgba($color: #ffffff, $alpha: .2);
+
+                a {
+                    width: 33.33%;
+                    height: 33.33%;
+                    background-color: rgba($color: #ffffff, $alpha: .0);
+                }
+            }
+            .ad {
+                height: 50%;
+                p {
+                    font-size: 30px;
+                }
+            }
+        }
+    }
+}
+
+}

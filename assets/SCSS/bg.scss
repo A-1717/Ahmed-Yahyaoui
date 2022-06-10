@@ -1,0 +1,128 @@
+@import 'abstracts/style';
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: normaltxt;
+    
+
+    body {
+        width: 100vw;
+        height: 100vh;
+
+        .official-bg {
+            width: 100%;
+            height: 100%;
+            background-color: $darkest;
+            overflow: hidden;
+            
+            .greeting-circle {
+                margin:  auto;
+                width: 80vw;
+                height: 100%;
+                background-color: transparent;
+                
+                p {
+                    position: absolute;
+                    font-size: 100px;
+                    font-family: titlestxt;
+                    color: $darkest;
+                    z-index: 1;
+                }
+                .hello {
+                    top: 100px;
+                    left: 50%;
+                }
+                .buddy {
+                    top: 250px;
+                    left: 65%;
+                    transform: rotateZ(50deg);
+                }
+                .you {
+                    top:600px;
+                    left: 70%;
+                    transform: rotateZ(120deg);
+                }
+                .welcome {
+                    bottom: 50px;
+                    left: 50%;
+                    transform: translateX(-50px);
+                }
+            }
+    
+            .face-square {
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50px, -50px);
+                width: 40px;
+                height: 200px;
+                border-radius: 50px 50px 0 0;
+                background-color: $square-bg;
+                animation: squareAnimation 15s normal infinite;
+    
+                @keyframes squareAnimation {
+                    0% {transform: rotate(0deg);}
+                    25% {transform: rotate(180deg);}
+                    100% {transform: rotate(360deg);}
+                    }
+    
+            }
+            .face-square::after {
+                content: '';
+                position: absolute;
+                bottom: -150px;
+                left: -10px;
+                width: 60px;
+                height: 200px;
+                transform: perspective(20px) rotateX(10deg);
+                background-color: rgba($color: #02DDE8, $alpha: .2);
+                filter: blur(20px);
+            }
+    
+            .left-circle {
+                position: absolute;
+                top: 150px;
+                left: 350px;
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                filter: blur(5px);
+                background-color: $square-bg;
+            }
+            
+            .left-circle::before {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                background-color: rgba($color: #02DDE8, $alpha: .2);
+                animation: leftcircle 5s ease infinite;
+                @keyframes leftcircle {
+                    0% {width: 30px; height: 30px;}
+                    50% {width: 50px; height: 50px;}
+                    100% {width: 30px; height: 30px;}
+                }
+            }
+            .left-circle::after {
+                content: '';
+                position: absolute;
+                bottom: -70px;
+                right: 10px;
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                border: 1px solid white;
+                animation: leftdonut 5s ease infinite;
+                @keyframes leftdonut {
+                    0% {width: 50px; height: 50px; transform: translateY(0px);}
+                    50% {width: 30px; height: 30px; transform: translateY(-50px);}
+                    100% {width: 50px; height: 50px; transform: translateY(0px);}
+                }
+            }
+        }
+    }
+}

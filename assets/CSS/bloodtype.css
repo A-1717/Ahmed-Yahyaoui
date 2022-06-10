@@ -1,0 +1,132 @@
+@font-face {
+  font-family: secondarytxt;
+  src: url(../Fonts/GlitchInside.otf);
+}
+
+@font-face {
+  font-family: normaltxt;
+  src: url(../Fonts/MaldiniNormal.otf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: normaltxt, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  list-style: none;
+  text-decoration: none;
+}
+
+* body {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[12];
+      grid-template-columns: repeat(12, 1fr);
+  -ms-grid-rows: (1fr)[12];
+      grid-template-rows: repeat(12, 1fr);
+  gap: 5px;
+  padding: 0;
+  height: 100vh;
+  overflow: hidden;
+}
+
+* body .official-bg {
+  position: absolute;
+  z-index: -1;
+  height: 99.9vh;
+}
+
+* body ::-webkit-scrollbar {
+  width: 1px;
+}
+
+* body ::-webkit-scrollbar-track {
+  width: 1px;
+  background-color: transparent;
+}
+
+* body ::-webkit-scrollbar-thumb {
+  width: 5px;
+  background-color: #212F3D;
+}
+
+* body .primary-main {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 11;
+  grid-column: 2/13;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 11;
+  grid-row: 2/13;
+  margin: 5px;
+}
+
+@media only screen and (max-width: 1250px) {
+  * body .primary-main {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 12;
+    grid-column: 1/13;
+  }
+}
+
+body .primary-main .bloodtype {
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50%;
+  height: 70%;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.1);
+  font-size: 25px;
+  color: white;
+  gap: 10px;
+  -webkit-animation: blur 0.5s ease 1;
+          animation: blur 0.5s ease 1;
+}
+
+@-webkit-keyframes blur {
+  0% {
+    -webkit-filter: blur(500px);
+            filter: blur(500px);
+  }
+  100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+  }
+}
+
+@keyframes blur {
+  0% {
+    -webkit-filter: blur(500px);
+            filter: blur(500px);
+  }
+  100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+  }
+}
+
+body .primary-main .bloodtype h2 {
+  font-size: 50px;
+  font-weight: bolder;
+  color: #02DDE8;
+}
+
+@media only screen and (max-width: 1000px) {
+  body .primary-main .bloodtype {
+    width: 100%;
+    height: 100%;
+  }
+  body .primary-main .bloodtype h2 {
+    font-size: 30px;
+  }
+}
+/*# sourceMappingURL=bloodtype.css.map */

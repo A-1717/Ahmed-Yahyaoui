@@ -1,0 +1,249 @@
+@import 'abstracts/style';
+
+body {
+    .primary-main {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+
+        .home {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 10px;
+            width: 70%;
+            height: 100%;
+            padding: 10px;
+            overflow-y: scroll;
+
+            .intro {
+                position: relative;
+                display: flex;
+                justify-content: end;
+                align-items: center;
+                width: 50%;
+                min-height: max-content;
+                height: 100%;
+                padding: 10px 0;
+                text-align: center;
+                animation: intro 1.5s ease 1;
+                overflow: hidden;
+                @keyframes intro {
+                    0% {height: 1%; visibility: hidden;}
+                    100% {height: 100%; visibility: visible;}
+                }
+    
+                .intro-wrapper {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    width: 100%;
+                    height: 90%;
+                    animation: introSlider 3s ease 1;
+    
+                    @keyframes introSlider {
+                        0% {transform: translateY(200%);}
+                        100% {transform: translateY(0);}
+                    }
+    
+                    h1 {
+                        font-size: 35px;
+                        color: $light-blue;
+                    }
+                    p {
+                        font-size: 25px;
+                        color: white;
+                    }
+                    h2 {
+                        font-size: 30px;
+                        color: $light-blue;
+                    }
+                }
+            }
+            .intro::before {
+                content: '';
+                position: absolute;
+                top: -10px;
+                left: 50%;
+                transform: translateX(-25px) rotate(45deg);
+                width: 20px;
+                height: 20px;
+                background-color: $light-blue;
+            }
+    
+            .introduction {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+                width: 50%;
+                height: 100%;
+                
+                .introduction-wrapper {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    width: 100%;
+                    height: 50%;
+                    text-align: center;
+                    font-size: 50px;
+                    font-weight: bolder;
+                    color: $light-blue;
+                    padding: 10px;
+                    .img-home {
+                        position: relative;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        animation: imghome 2s ease 1;
+                        
+                        img {
+                            width: 350px;
+                            height: auto;
+                            border-radius: 2px;
+                            border: $bold-blue-border;
+                            animation: imghome 2s ease 1;
+                            
+                        }
+                        @keyframes imghome {
+                            0% {width: 10px; height: auto;}
+                            100% {width: 350px; height: auto;}
+                        }
+                    }
+                    .img-home::before {
+                        content: '';
+                        position: absolute;
+                        inset: -5px;
+                        background-image: linear-gradient(to left bottom, #963ADA, #3AC4DA);
+                        filter: blur(5px);
+                        z-index: -1;
+                        animation: imageRgb 3s ease infinite;
+
+                        @keyframes imageRgb {
+                            0% {filter: hue-rotate(0) blur(5px);}
+                            25% {filter: hue-rotate(360deg) blur(5px);}
+                            50% {filter: hue-rotate(0) blur(5px);}
+                            75% {filter: hue-rotate(360deg) blur(5px);}
+                            100% {filter: hue-rotate(0) blur(5px);}
+                        }
+                    }
+                    .contact-me {
+                        padding: 20px;
+                        margin: 20px;
+                        border-radius: 2px;
+                        background-color: black;
+                        color: white;
+                        cursor: pointer;
+                        animation: contactme 3s ease 1;
+                    }
+                    @keyframes contactme {
+                        0% {transform: translateX(3000%); background-color: transparent; color: transparent;}
+                        100% {transform: translateX(0);}
+                    }
+                }
+
+            }
+        }
+
+        //1100px width media query 
+        @media only screen and (max-width:1100px) {
+            .home {
+                width: 99%;
+            }
+        }
+
+
+        //750px width media query 
+        @media only screen and (max-width:750px) {
+            .home {
+                position: relative;
+                flex-direction: column;
+                justify-content: start;
+                width: 99%;
+                height: 100%;
+                padding: 20px 0;
+                overflow: unset;
+                overflow-y: scroll;
+                overflow-x: hidden;
+
+            .intro {
+                justify-content: start;
+                width: 100%;
+                min-height: 250px;
+                padding: 2px 0;
+                margin: 10px 0;
+                overflow: unset;
+
+    
+                .intro-wrapper {
+                    width: 100%;
+                    height: 100%;
+                    h1 {
+                        font-size: 30px;
+                    }
+                    p {
+                        font-size: 20px;
+                    }
+                    h2 {
+                        font-size: 20px;
+                    }
+                }
+            }
+            .intro::before {
+                display: none;
+            }
+        
+                .introduction {
+                    width: 99%;
+                    .introduction-wrapper {
+                        width: 100%;
+                        font-size: 25px;
+
+                        .img-home {
+                            width: max-content;
+                            height: max-content;
+                            
+                            img {
+                                width: 95vw;
+                                height: 80vh;
+                                z-index: 0;
+                            }
+                        }
+                        
+                        .contact-me {
+                            display: flex;
+                            justify-content: center;
+                            align-items: baseline;
+                            width: 98%;
+                            height: 100px;
+                            padding: 20px;
+                            margin: 20px 0;
+                            border-radius: 5px;
+                        }
+                    }
+    
+                }
+            }
+        }
+    }
+
+
+    //300px width media query 
+    @media only screen and (max-width:300px) {
+        .home {
+            .intro {
+                .intro-wrapper {
+                    h2 {
+                        display: none;
+                    }
+                }
+            }
+            .intro::before {
+                display: none;
+            }
+        }
+    }
+}

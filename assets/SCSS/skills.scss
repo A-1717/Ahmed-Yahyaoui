@@ -1,0 +1,416 @@
+@import 'abstracts/style';
+
+body {
+    .primary-main {
+        .skills {
+            position: relative;
+            display: none;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            gap: 30px;
+            width: 100%;
+            height: 100%;
+            background-color: rgba($color: #ffffff, $alpha: .02);
+            border: $bold-blue-border;
+            overflow-x: hidden;
+
+            .job-name {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 50%;
+                height: 100px;
+                
+                div {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    p {
+                        font-size: 100px;
+                        font-weight: 700;
+                        color: white;
+                    }
+                    .f {
+                        animation: f 5s 2s ease infinite;
+                        @keyframes f {
+                            0% {transform: translateY(0px);}
+                            0.5% {transform: translateY(-10px);}
+                            5% {transform: translateY(0px);}
+                            100% {transform: translateY(0);}
+                        }
+                    }
+                    .r {
+                        animation: r 5s 2s ease infinite;
+                        @keyframes r {
+                            0% {transform: translateY(0px);}
+                            5% {transform: translateY(-10px);}
+                            10% {transform: translateY(0px);}
+                            100% {transform: translateY(0);}
+                        }
+                    }
+                    .o1 {
+                        animation: o1 5s 2s ease infinite;
+                        @keyframes o1 {
+                            0% {transform: translateY(0px);}
+                            5% {transform: translateY(0px);}
+                            10% {transform: translateY(-10px);}
+                            15% {transform: translateY(0px);}
+                            100% {transform: translateY(0);}
+                        }
+                    }
+                    .n1 {
+                        animation: n1 5s 2s ease infinite;
+                        @keyframes n1 {
+                            0% {transform: translateY(0px);}
+                            10% {transform: translateY(0px);}
+                            15% {transform: translateY(-10px);}
+                            20% {transform: translateY(0px);}
+                            100% {transform: translateY(0);}
+                        }
+                    }
+                    .t1 {
+                        animation: t1 5s 2s ease infinite;
+                        @keyframes t1 {
+                            0% {transform: translateY(0px);}
+                            15% {transform: translateY(0px);}
+                            20% {transform: translateY(-10px);}
+                            25% {transform: translateY(0px);}
+                            100% {transform: translateY(0);}
+                        }
+                    }
+                    .e1 {
+                        animation: e1 5s 2s ease infinite;
+                        @keyframes e1 {
+                            0% {transform: translateY(0px);}
+                            20% {transform: translateY(0px);}
+                            25% {transform: translateY(-10px);}
+                            30% {transform: translateY(0px);}
+                            100% {transform: translateY(0);}
+                        }
+                    }
+                    .n2 {
+                        animation: n2 5s 2s ease infinite;
+                        @keyframes n2 {
+                            0% {transform: translateY(0px);}
+                            25% {transform: translateY(0px);}
+                            30% {transform: translateY(-10px);}
+                            35% {transform: translateY(0px);}
+                            100% {transform: translateY(0);}
+                        }
+                    }
+                    .d1 {
+                        animation: d1 5s 2s ease infinite;
+                        @keyframes d1 {
+                            0% {transform: translateY(0px);}
+                            30% {transform: translateY(0px);}
+                            35% {transform: translateY(-10px);}
+                            40% {transform: translateY(0px);}
+                            100% {transform: translateY(0);}
+                        }
+                    }
+                    .d2 {
+                        animation: d2 5s 2s ease infinite;
+                        @keyframes d2 {
+                            0% {transform: translateY(0px);}
+                            35% {transform: translateY(0px);}
+                            40% {transform: translateY(-10px);}
+                            45% {transform: translateY(0px);}
+                            100% {transform: translateY(0);}
+                        }
+                    }
+                    .e2 {
+                        animation: e2 5s 2s ease infinite;
+                        @keyframes e2 {
+                            0% {transform: translateY(0px);}
+                            40% {transform: translateY(0px);}
+                            45% {transform: translateY(-10px);}
+                            50% {transform: translateY(0px);}
+                            100% {transform: translateY(0);}
+                        }
+                    }
+                    .v {
+                        animation: v 5s 2s ease infinite;
+                        @keyframes v {
+                            0% {transform: translateY(0px);}
+                            45% {transform: translateY(0px);}
+                            50% {transform: translateY(-10px);}
+                            55% {transform: translateY(0px);}
+                            100% {transform: translateY(0);}
+                        }
+                    }
+                    .e3 {
+                        animation: e3 5s 2s ease infinite;
+                        @keyframes e3 {
+                            0% {transform: translateY(0px);}
+                            50% {transform: translateY(0px);}
+                            55% {transform: translateY(-10px);}
+                            60% {transform: translateY(0px);}
+                            100% {transform: translateY(0);}
+                        }
+                    }
+                    .l {
+                        animation: l 5s 2s ease infinite;
+                        @keyframes l {
+                            0% {transform: translateY(0px);}
+                            55% {transform: translateY(0px);}
+                            60% {transform: translateY(-10px);}
+                            65% {transform: translateY(0px);}
+                            100% {transform: translateY(0);}
+                        }
+                    }
+                    .o2 {
+                        animation: o2 5s 2s ease infinite;
+                        @keyframes o2 {
+                            0% {transform: translateY(0px);}
+                            60% {transform: translateY(0px);}
+                            65% {transform: translateY(-10px);}
+                            70% {transform: translateY(0px);}
+                            100% {transform: translateY(0);}
+                        }
+                    }
+                    .p {
+                        animation: p 5s 2s ease infinite;
+                        @keyframes p {
+                            0% {transform: translateY(0px);}
+                            65% {transform: translateY(0px);}
+                            70% {transform: translateY(-10px);}
+                            75% {transform: translateY(0px);}
+                            100% {transform: translateY(0);}
+                        }
+                    }
+                    .m {
+                        animation: m 5s 2s ease infinite;
+                        @keyframes m {
+                            0% {transform: translateY(0px);}
+                            70% {transform: translateY(0px);}
+                            75% {transform: translateY(-10px);}
+                            80% {transform: translateY(0px);}
+                            100% {transform: translateY(0);}
+                        }
+                    }
+                    .e4 {
+                        animation: e4 5s 2s ease infinite;
+                        @keyframes e4 {
+                            0% {transform: translateY(0px);}
+                            75% {transform: translateY(0px);}
+                            80% {transform: translateY(-10px);}
+                            85% {transform: translateY(0px);}
+                            100% {transform: translateY(0);}
+                        }
+                    }
+                    .n3 {
+                        animation: n3 5s 2s ease infinite;
+                        @keyframes n3 {
+                            0% {transform: translateY(0px);}
+                            80% {transform: translateY(0px);}
+                            85% {transform: translateY(-10px);}
+                            90% {transform: translateY(0px);}
+                            100% {transform: translateY(0);}
+                        }
+                    }
+                    .t2 {
+                        animation: t2 5s 2s ease infinite;
+                        @keyframes t2 {
+                            0% {transform: translateY(0px);}
+                            85% {transform: translateY(0px);}
+                            90% {transform: translateY(-10px);}
+                            95% {transform: translateY(0px);}
+                            100% {transform: translateY(0);}
+                        }
+                    }
+                }
+
+            }
+
+            .skills-logos {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 80%;
+
+                div {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-evenly;
+                    align-items: center;
+
+                    img {
+                        width: 150px;
+                        height: auto;
+                    }
+
+                    p {
+                        color: $light-blue;
+                        font-size: 25px;
+                        font-weight: 700;
+                    }
+                }
+                
+                .html {
+                    animation: html 1s ease 1;
+                    @keyframes html {
+                        0% {transform: translateX(-1000%); filter: blur(150px);}
+                        100% {transform: translateX(0);}
+                    }
+                }
+                .css {
+                    animation: css 2s ease 1;
+                    @keyframes css {
+                        0% {transform: translateX(-1000%); filter: blur(150px);}
+                        100% {transform: translateX(0);}
+                    }
+                }
+                .sass {
+                    animation: sass 3s ease 1;
+                    @keyframes sass {
+                        0% {transform: translateX(-1000%); filter: blur(150px);}
+                        100% {transform: translateX(0);}
+                    }
+                }
+                .js {
+                    animation: js 4s ease 1;
+                    @keyframes js {
+                        0% {transform: translateX(-1000%); filter: blur(150px);}
+                        100% {transform: translateX(0);}
+                    }
+                }
+            }
+        }
+        .skills::before {
+            content: '';
+            position: absolute;
+            top: -10px;
+            left: 50%;
+            transform: translateX(-50px) rotate(45deg);
+            width: 20px;
+            height: 20px;
+            background-color: $light-blue;
+        }
+    }
+
+
+    // 1550px media query
+    @media only screen and (max-width: 1550px) {
+        .primary-main {
+            .skills {
+                justify-content: center;
+                gap: 30px;
+                overflow-y: scroll;
+    
+                .job-name {
+                    justify-content: space-evenly;
+                    width: 90%;  
+                }   
+            }
+        }
+    }
+
+
+
+    // 1010px media query
+    @media only screen and (max-width: 1010px) {
+        .primary-main {
+            .skills {
+                .job-name {
+                    width: 70%;  
+
+                    div {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        p {
+                            font-size: 70px;
+                        }
+                    }
+    
+                }
+            }
+        }
+    }
+
+
+
+    // 750px media query
+    @media only screen and (max-width: 750px) {
+        .primary-main {
+            .skills {
+                gap: 10px;
+                .job-name {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 100%;  
+
+                    div {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        p {
+                            font-size: 50px;
+                            font-weight: 700;
+                            color: white;
+                        }
+                        .d2 {
+                            display: none;
+                        }
+                        .e2 {
+                            display: none;
+                        }
+                        .v {
+                            display: none;
+                        }
+                        .e3 {
+                            display: none;
+                        }
+                        .l {
+                            display: none;
+                        }
+                        .o2 {
+                            display: none;
+                        }
+                        .p {
+                            display: none;
+                        }
+                        .m {
+                            display: none;
+                        }
+                        .e4 {
+                            display: none;
+                        }
+                        .n3 {
+                            display: none;
+                        }
+                        .t2 {
+                            display: none;
+                        }
+                    }
+    
+                }
+    
+                .skills-logos {
+                    flex-direction: column;
+                    justify-content: space-evenly;
+                    width: 100%;
+                    height: max-content;    
+                    div {
+                        img {
+                            width: 50px;
+                            height: auto;
+                        }
+    
+                        p {
+                            font-size: 20px;
+                            font-weight: normal;
+                        }
+                    }
+                }
+            }
+            .skills::before {
+                transform: translateX(-5px) rotate(45deg);
+                width: 20px;
+                height: 20px;
+            }
+        }
+    }
+}
