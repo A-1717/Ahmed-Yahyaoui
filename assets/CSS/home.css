@@ -488,7 +488,7 @@ body .primary-main .home .introduction .introduction-wrapper .contact-me {
   }
 }
 
-@media only screen and (max-width: 300px) {
+@media only screen and (max-width: 500px) {
   body .home .intro .intro-wrapper h2 {
     display: none;
   }
