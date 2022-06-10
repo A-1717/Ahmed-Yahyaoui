@@ -1,4 +1,9 @@
 @font-face {
+  font-family: titletxt;
+  src: url(../Fonts/SlemanDemo.ttf);
+}
+
+@font-face {
   font-family: secondarytxt;
   src: url(../Fonts/GlitchInside.otf);
 }
@@ -97,7 +102,7 @@
 * body .official-bg .greeting-circle p {
   position: absolute;
   font-size: 100px;
-  font-family: titlestxt;
+  font-family: titletxt;
   color: #212F3D;
   z-index: 1;
 }
