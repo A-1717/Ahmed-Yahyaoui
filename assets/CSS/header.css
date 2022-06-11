@@ -430,21 +430,17 @@
 
 @media only screen and (max-width: 500px) {
   * body .primary-header .Profile {
-    width: 30%;
-    height: 60%;
+    width: 50px;
+    height: 50px;
   }
   * body .primary-header .Profile img {
     width: 100%;
     height: 100%;
   }
   * body .primary-header .menu-btn {
-    width: 30%;
-    height: 60%;
-  }
-  * body .primary-header .menu-btn div {
-    width: 35px;
-    height: 3px;
-    background-color: white;
+    width: 50px;
+    height: 50px;
+    margin: 0 5px;
   }
 }
 
