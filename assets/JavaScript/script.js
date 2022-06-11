@@ -217,12 +217,14 @@ menuBtn.addEventListener('click', (e) => {
 })
 
 const headerBtnsPhoneDisplay = () => {
-    if (headerBtnsPhone.style.display == 'flex') {
-        headerBtnsPhone.style.display = 'none';
-        menuBtn.classList.toggle('menu-btn-close');
-    } else {
-        headerBtnsPhone.style.display = 'flex';
-        menuBtn.classList.toggle('menu-btn-close');
+    if (window.innerWidth <= 1010) {
+        if (headerBtnsPhone.style.display == 'flex') {
+            headerBtnsPhone.style.display = 'none';
+            menuBtn.classList.toggle('menu-btn-close');
+        } else {
+            headerBtnsPhone.style.display = 'flex';
+            menuBtn.classList.toggle('menu-btn-close');
+        }
     }
 }
 
