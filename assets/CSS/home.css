@@ -418,6 +418,9 @@ body .primary-main .home .introduction .introduction-wrapper .contact-me {
         -ms-flex-pack: start;
             justify-content: start;
     width: 99%;
+    min-height: -webkit-max-content;
+    min-height: -moz-max-content;
+    min-height: max-content;
     height: 100%;
     padding: 20px 0;
     overflow: unset;
@@ -429,7 +432,7 @@ body .primary-main .home .introduction .introduction-wrapper .contact-me {
         -ms-flex-pack: start;
             justify-content: start;
     width: 100%;
-    min-height: 250px;
+    min-height: 400px;
     padding: 2px 0;
     margin: 10px 0;
     overflow: unset;
