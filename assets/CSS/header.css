@@ -437,6 +437,41 @@
     width: 100%;
     height: 100%;
   }
+  * body .primary-header .btns {
+    position: absolute;
+    top: 100px;
+    right: 0;
+    display: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    height: 70vh;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 2;
+  }
+  * body .primary-header .btns a {
+    font-size: 20px;
+  }
+  * body .primary-header .btns #home-btn {
+    width: 90%;
+    height: 20%;
+    font-size: 20px;
+  }
+  * body .primary-header .btns .whenFocus {
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    border: 2px solid #02dde8;
+    border-style: solid none solid none;
+  }
   * body .primary-header .menu-btn {
     width: 50px;
     height: 50px;

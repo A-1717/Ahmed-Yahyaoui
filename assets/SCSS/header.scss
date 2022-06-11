@@ -294,6 +294,38 @@
                         height: 100%;
                     }
                 }
+
+                .btns {
+                    position: absolute;
+                    top: 100px;
+                    right: 0;
+                    display: none;
+                    flex-direction: column;
+                    justify-content: start;
+                    align-items: center;
+                    width: 100%;
+                    height: 70vh;
+                    background-color: rgba($color: #000000, $alpha: .9);
+                    z-index: 2;
+
+                    a {
+                        font-size: 20px;
+                    }
+
+                    #home-btn {
+                        width: 90%;
+                        height: 20%;
+                        font-size: 20px;
+                    }
+
+                    .whenFocus {
+                        position: relative;
+                        background-color: rgba($color: #ffffff, $alpha: .2);
+                        color: white;
+                        border: $bold-blue-border;
+                        border-style: solid none solid none;
+                    }
+                }
                 
                 .menu-btn {
                     width: 50px;
