@@ -431,10 +431,11 @@
 @media only screen and (max-width: 500px) {
   * body .primary-header .Profile {
     width: 30%;
+    height: 60%;
   }
   * body .primary-header .Profile img {
     width: 100%;
-    height: auto;
+    height: 100%;
   }
   * body .primary-header .menu-btn {
     width: 30%;
