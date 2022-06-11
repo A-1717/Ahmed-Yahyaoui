@@ -359,6 +359,10 @@
         border: $slim-blue-border;
         background-color: $darkest;
 
+        .close-aside {
+            display: none;
+        }
+
         li {
             display: flex;
             justify-content: center;
@@ -434,7 +438,40 @@
         z-index: 1;
 
         ul {
+            position: relative;
             width: 199px;
+
+            .close-aside {
+                position: absolute;
+                display: flex;
+                top: 0px;
+                right: 0px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 25px;
+                height: 25px;
+                border: $slim-blue-border;
+                cursor: pointer;
+                transition: all .2s ease;
+                &:hover {
+                    background-color: rgba($color: #ffffff, $alpha: .2);
+                }
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    margin: 2px;
+                    transform: rotate(90deg);
+
+                    animation: closeAsideBtn 1s ease infinite;
+                    @keyframes closeAsideBtn {
+                        0% {transform: translateX(-5px) rotate(90deg);}
+                        100% {transform: translateX(-0px) rotate(90deg);}
+                    }
+                }
+            }
+
             li {
                 width: 200px;
                 a {

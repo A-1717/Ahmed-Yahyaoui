@@ -61,6 +61,7 @@ homeBtn.addEventListener('click', (e) => {
         displayingBtns();
         home.style.display = 'flex';
         homeBtn.classList.add('whenFocus');
+        headerBtnsPhoneDisplay();
     }
 })
 
@@ -72,6 +73,7 @@ projectsBtn.addEventListener('click', (e) => {
         displayingBtns();
         projects.style.display = 'flex';
         projectsBtn.classList.add('whenFocus');
+        headerBtnsPhoneDisplay();
     }
 })
 
@@ -83,6 +85,7 @@ roadmapBtn.addEventListener('click', (e) => {
         displayingBtns();
         roadmap.style.display = 'flex';
         roadmapBtn.classList.add('whenFocus');
+        headerBtnsPhoneDisplay();
     }
 })
 
@@ -94,6 +97,7 @@ skillsBtn.addEventListener('click', (e) => {
         displayingBtns();
         skills.style.display = 'flex';
         skillsBtn.classList.add('whenFocus');
+        headerBtnsPhoneDisplay();
     }
 })
 
@@ -105,6 +109,7 @@ findmeBtn.addEventListener('click', (e) => {
         displayingBtns();
         findme.style.display = 'flex';
         findmeBtn.classList.add('whenFocus');
+        headerBtnsPhoneDisplay();
     }
 })
 
@@ -208,6 +213,10 @@ let headerBtnsPhone = document.getElementById('header-btns');
 let menuBtn = document.getElementById('menu-btn');
 
 menuBtn.addEventListener('click', (e) => {
+    headerBtnsPhoneDisplay();
+})
+
+const headerBtnsPhoneDisplay = () => {
     if (headerBtnsPhone.style.display == 'flex') {
         headerBtnsPhone.style.display = 'none';
         menuBtn.classList.toggle('menu-btn-close');
@@ -215,8 +224,7 @@ menuBtn.addEventListener('click', (e) => {
         headerBtnsPhone.style.display = 'flex';
         menuBtn.classList.toggle('menu-btn-close');
     }
-})
-
+}
 
 // aside displaying at the tablet size
 let profileBtn = document.getElementById('profile');
@@ -224,4 +232,10 @@ let aside = document.getElementById('aside');
 
 profileBtn.addEventListener('click', (e) => {
         aside.classList.toggle('aside-hidden');
+})
+
+let closeAside = document.getElementById('close-aside');
+
+closeAside.addEventListener('click', (e) => {
+    aside.classList.toggle('aside-hidden');
 })
