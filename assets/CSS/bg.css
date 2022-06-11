@@ -300,4 +300,47 @@
             transform: translateY(0px);
   }
 }
+
+@media only screen and (max-width: 750px) {
+  * body .official-bg .greeting-circle p {
+    font-size: 35px;
+  }
+  * body .official-bg .greeting-circle .hello {
+    top: 100px;
+    left: 10%;
+  }
+  * body .official-bg .greeting-circle .buddy {
+    top: 150px;
+    left: 50%;
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg);
+  }
+  * body .official-bg .greeting-circle .you {
+    top: auto;
+    bottom: 25%;
+    left: 0%;
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg);
+  }
+  * body .official-bg .greeting-circle .welcome {
+    bottom: 10%;
+    left: 50%;
+    -webkit-transform: translateX(-50px);
+            transform: translateX(-50px);
+  }
+  * body .official-bg .face-square {
+    left: 0%;
+    top: 0%;
+    -webkit-transform: translate(0px, 0px);
+            transform: translate(0px, 0px);
+    width: 40px;
+    height: 40px;
+    border-radius: 50px 50px 50px 50px;
+  }
+  * body .official-bg .face-square::after {
+    height: 300px;
+    -webkit-filter: blur(25px);
+            filter: blur(25px);
+  }
+}
 /*# sourceMappingURL=bg.css.map */

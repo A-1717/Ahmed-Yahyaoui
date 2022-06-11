@@ -200,7 +200,7 @@ body {
                 .introduction {
                     width: 99%;
                     .introduction-wrapper {
-                        width: 100%;
+                        width: 95vw;
                         font-size: 25px;
 
                         .img-home {
@@ -208,8 +208,8 @@ body {
                             height: max-content;
                             
                             img {
-                                width: 95vw;
-                                height: 80vh;
+                                width: 90vw;
+                                height: 65vh;
                                 z-index: 0;
                             }
                         }
@@ -244,6 +244,30 @@ body {
             }
             .intro::before {
                 display: none;
+            }
+
+            .introduction {
+                width: 99%;
+                .introduction-wrapper {
+                    width: 95vw;
+                    font-size: 25px;
+
+                    .img-home {
+                        width: max-content;
+                        height: max-content;
+                        
+                        img {
+                            width: 90vw;
+                            height: 65vh;
+                            z-index: 0;
+                        }
+                    }
+                    
+                    .contact-me {
+                        font-size: 12px;
+                    }
+                }
+
             }
         }
     }

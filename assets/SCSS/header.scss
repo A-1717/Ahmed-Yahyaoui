@@ -282,6 +282,30 @@
                 }
             }
         }
+
+        // 500 px 
+        @media only screen and (max-width: 500px) {
+            .primary-header {
+                .Profile {
+                    width: 30%;
+                    img {
+                        width: 100%;
+                        height: auto;
+                    }
+                }
+                
+                .menu-btn {
+                    width: 30%;
+                    height: 60%;
+
+                    div {
+                        width: 35px;
+                        height: 3px;
+                        background-color: white;
+                    }
+                }
+            }
+        }
     }
 }
 

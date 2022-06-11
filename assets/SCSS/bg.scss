@@ -124,5 +124,50 @@
                 }
             }
         }
+
+
+        //750px width media query 
+        @media only screen and (max-width:750px) {
+            .official-bg {
+                .greeting-circle {
+                    p {
+                        font-size: 35px;
+                    }
+                    .hello {
+                        top: 100px;
+                        left: 10%;
+                    }
+                    .buddy {
+                        top: 150px;
+                        left: 50%;
+                        transform: rotateZ(0deg);
+                    }
+                    .you {
+                        top: auto;
+                        bottom: 25%;
+                        left: 0%;
+                        transform: rotateZ(0deg);
+                    }
+                    .welcome {
+                        bottom: 10%;
+                        left: 50%;
+                        transform: translateX(-50px);
+                    }
+                }
+        
+                .face-square {
+                    left: 0%;
+                    top: 0%;
+                    transform: translate(0px, 0px);
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50px 50px 50px 50px;
+                }
+                .face-square::after {
+                    height: 300px;
+                    filter: blur(25px);
+                }
+            }
+        }
     }
 }

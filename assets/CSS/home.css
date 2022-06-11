@@ -457,7 +457,7 @@ body .primary-main .home .introduction .introduction-wrapper .contact-me {
     width: 99%;
   }
   body .primary-main .home .introduction .introduction-wrapper {
-    width: 100%;
+    width: 95vw;
     font-size: 25px;
   }
   body .primary-main .home .introduction .introduction-wrapper .img-home {
@@ -469,8 +469,8 @@ body .primary-main .home .introduction .introduction-wrapper .contact-me {
     height: max-content;
   }
   body .primary-main .home .introduction .introduction-wrapper .img-home img {
-    width: 95vw;
-    height: 80vh;
+    width: 90vw;
+    height: 65vh;
     z-index: 0;
   }
   body .primary-main .home .introduction .introduction-wrapper .contact-me {
@@ -497,6 +497,29 @@ body .primary-main .home .introduction .introduction-wrapper .contact-me {
   }
   body .home .intro::before {
     display: none;
+  }
+  body .home .introduction {
+    width: 99%;
+  }
+  body .home .introduction .introduction-wrapper {
+    width: 95vw;
+    font-size: 25px;
+  }
+  body .home .introduction .introduction-wrapper .img-home {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+  }
+  body .home .introduction .introduction-wrapper .img-home img {
+    width: 90vw;
+    height: 65vh;
+    z-index: 0;
+  }
+  body .home .introduction .introduction-wrapper .contact-me {
+    font-size: 12px;
   }
 }
 /*# sourceMappingURL=home.css.map */

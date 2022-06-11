@@ -428,6 +428,25 @@
   }
 }
 
+@media only screen and (max-width: 500px) {
+  * body .primary-header .Profile {
+    width: 30%;
+  }
+  * body .primary-header .Profile img {
+    width: 100%;
+    height: auto;
+  }
+  * body .primary-header .menu-btn {
+    width: 30%;
+    height: 60%;
+  }
+  * body .primary-header .menu-btn div {
+    width: 35px;
+    height: 3px;
+    background-color: white;
+  }
+}
+
 .aside {
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
